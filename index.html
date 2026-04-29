@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <title>Repost — منصة إدارة المحتوى الذكية</title>
+  <title>ريبوست — منصة إدارة المحتوى الذكية</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
@@ -56,9 +56,17 @@
       border-bottom: 1px solid var(--border);
     }
     nav .logo {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 20px; font-weight: 700; color: var(--text-primary);
+      display: flex; align-items: center; gap: 12px;
+      font-size: 22px; font-weight: 800; color: var(--text-primary);
       text-decoration: none; white-space: nowrap;
+    }
+    nav .logo .logobox {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, #e94560, #ff6b8a);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 900; color: #fff;
+      box-shadow: 0 4px 15px rgba(233,69,96,0.3);
     }
     nav .logo span { color: var(--accent); }
     nav .hamburger {
@@ -318,7 +326,8 @@
 <nav>
   <a href="/" class="logo">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e94560" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-    <span>Repost</span>.ai
+    <div class="logobox">ر</div>
+    <span>ريبوست</span>
   </a>
   <button class="hamburger" onclick="this.classList.toggle('active');document.querySelector('.links').classList.toggle('open')">
     <span></span><span></span><span></span>
@@ -327,16 +336,16 @@
     <a href="#features">المميزات</a>
     <a href="#pricing">الأسعار</a>
     <a href="#testimonials">التعليقات</a>
-    <a href="#" class="btn-primary">ابدأ مجاناً</a>
+    <a href="#" class="btn-primary">جرب ٣ أيام مجاناً</a>
   </div>
 </nav>
 
 <section class="hero">
   <div class="hero-badge">🚀 ثورة في إدارة المحتوى</div>
   <h1>منشور واحد.<br><span>جميع المنصات.</span></h1>
-  <p>اكتب فكرتك مرة واحدة. Repost يعيد صياغتها لكل منصة تواصل اجتماعي، يصمم الصور، ويجدول النشر تلقائياً. أنت بس تراقب النتائج.</p>
+  <p>اكتب فكرتك مرة واحدة. ريبوست يعيد صياغتها لكل منصة تواصل اجتماعي، يصمم الصور، ويجدول النشر تلقائياً. أنت بس تراقب النتائج.</p>
   <div class="hero-actions">
-    <a href="#" class="btn-primary">✨ ابدأ مجاناً</a>
+    <a href="#" class="btn-primary">✨ جرب ٣ أيام مجاناً</a>
     <a href="#features" class="btn-secondary">المميزات ↓</a>
   </div>
 </section>
@@ -344,7 +353,7 @@
 <section class="section" id="features">
   <div class="section-label">✨ المميزات</div>
   <h2 class="section-title">كل أدوات المحتوى في مكان واحد</h2>
-  <p class="section-desc">من كتابة المنشورات إلى النشر الآلي — Repost يغطي كل احتياجاتك.</p>
+  <p class="section-desc">من كتابة المنشورات إلى النشر الآلي — ريبوست يغطي كل احتياجاتك.</p>
   <div class="features-grid">
     <div class="feature-card">
       <div class="icon">✍️</div>
@@ -354,7 +363,7 @@
     <div class="feature-card">
       <div class="icon">📅</div>
       <h3>جدولة ذكية</h3>
-      <p>يحدد أفضل أوقات النشر لكل منصة بناءً على تحليل الجمهور. انشر وأنت نايم — Repost يشتغل 24 ساعة.</p>
+      <p>يحدد أفضل أوقات النشر لكل منصة بناءً على تحليل الجمهور. انشر وأنت نايم — ريبوست يشتغل 24 ساعة.</p>
     </div>
     <div class="feature-card">
       <div class="icon">🎨</div>
@@ -382,7 +391,7 @@
 <section class="section" id="pricing">
   <div class="section-label">💰 الأسعار</div>
   <h2 class="section-title">اختر خطتك</h2>
-  <p class="section-desc">ابدأ مجاناً، طوّر لـ برو لما تحتاج القوة الكاملة.</p>
+  <p class="section-desc">جرب ٣ أيام مجاناً، طوّر لـ برو لما تحتاج القوة الكاملة.</p>
   <div class="pricing-grid">
     <div class="pricing-card">
       <h3>مجاني</h3>
@@ -395,7 +404,7 @@
         <li>لا يوجد تحليلات</li>
         <li>دعم عبر الإيميل</li>
       </ul>
-      <a href="#" class="btn-secondary" style="width:100%;justify-content:center;">ابدأ مجاناً</a>
+      <a href="#" class="btn-secondary" style="width:100%;justify-content:center;">جرب ٣ أيام مجاناً</a>
     </div>
     <div class="pricing-card popular">
       <h3>برو</h3>
@@ -430,7 +439,7 @@
 
 <section class="section" id="testimonials">
   <div class="section-label">⭐ ماذا يقول المستخدمون</div>
-  <h2 class="section-title">الجميع يحب Repost</h2>
+  <h2 class="section-title">الجميع يحب ريبوست</h2>
   <p class="section-desc">آلاف المستخدمين يثقون بنا في إدارة محتواهم اليومي.</p>
   <div class="testimonials-grid">
     <div class="testimonial-card">
@@ -442,7 +451,7 @@
         </div>
       </div>
       <div class="stars">★★★★★</div>
-      <blockquote>صراحة ما توقعت فيه منصة بهالبساطة. كنت أقعد ساعتين أعدل منشوري لكل برنامج، الحين بدقيقة وحدة أجهز كل شيء وأخلّي Repost يتولى الباقي.</blockquote>
+      <blockquote>صراحة ما توقعت فيه منصة بهالبساطة. كنت أقعد ساعتين أعدل منشوري لكل برنامج، الحين بدقيقة وحدة أجهز كل شيء وأخلّي ريبوست يتولى الباقي.</blockquote>
     </div>
     <div class="testimonial-card">
       <div class="user">
@@ -453,7 +462,7 @@
         </div>
       </div>
       <div class="stars">★★★★★</div>
-      <blockquote>من وقت ما استخدمت Repost، مبيعاتي زادت ٤٠٪. الجدولة الذكية خلّتني أوصل للعملاء في أوقات الذروة بدون ما أفكر. يستاهل كل ريال.</blockquote>
+      <blockquote>من وقت ما استخدمت ريبوست، مبيعاتي زادت ٤٠٪. الجدولة الذكية خلّتني أوصل للعملاء في أوقات الذروة بدون ما أفكر. يستاهل كل ريال.</blockquote>
     </div>
     <div class="testimonial-card">
       <div class="user">
@@ -464,7 +473,7 @@
         </div>
       </div>
       <div class="stars">★★★★★</div>
-      <blockquote>أدير ١٢ حساب لـ ٥ عملاء مختلفين. Repost خلاني أنام مرتاحة — منشوراتي تنزل في الوقت المضبوط بدون تأخير.</blockquote>
+      <blockquote>أدير ١٢ حساب لـ ٥ عملاء مختلفين. ريبوست خلاني أنام مرتاحة — منشوراتي تنزل في الوقت المضبوط بدون تأخير.</blockquote>
     </div>
     <div class="testimonial-card">
       <div class="user">
@@ -475,7 +484,7 @@
         </div>
       </div>
       <div class="stars">★★★★★</div>
-      <blockquote>كنت أستأجر مسوقين بمبالغ كبيرة. Repost وفّر علي ٣٠٠٠ ريال شهرياً. AI يكتب أفضل منهم بصراحة.</blockquote>
+      <blockquote>كنت أستأجر مسوقين بمبالغ كبيرة. ريبوست وفّر علي ٣٠٠٠ ريال شهرياً. AI يكتب أفضل منهم بصراحة.</blockquote>
     </div>
     <div class="testimonial-card">
       <div class="user">
@@ -497,7 +506,7 @@
         </div>
       </div>
       <div class="stars">★★★★★</div>
-      <blockquote>التقارير الأسبوعية عجيبة — تبين لك بالضبط وش يشتغل ووش لا. قبل Repost كنا نشتغل على حسّنا، الحين عندنا أرقام.</blockquote>
+      <blockquote>التقارير الأسبوعية عجيبة — تبين لك بالضبط وش يشتغل ووش لا. قبل ريبوست كنا نشتغل على حسّنا، الحين عندنا أرقام.</blockquote>
     </div>
   </div>
 </section>
@@ -505,13 +514,13 @@
 <section class="section">
   <div class="cta">
     <h2>جهّز منشورك الأول 🚀</h2>
-    <p>اكتب فكرتك مرة وحدة، وخل Repost ينشرها بذكاء على كل المنصات. ابدأ مجاناً — ما تحتاج بطاقة ائتمان.</p>
-    <a href="#" class="btn-primary" style="font-size:16px;padding:16px 40px;">✨ ابدأ مجاناً الآن</a>
+    <p>اكتب فكرتك مرة وحدة، وخل ريبوست ينشرها بذكاء على كل المنصات. جرب ٣ أيام مجاناً — ما تحتاج بطاقة ائتمان.</p>
+    <a href="#" class="btn-primary" style="font-size:16px;padding:16px 40px;">✨ جرب ٣ أيام مجاناً الآن</a>
   </div>
 </section>
 
 <footer>
-  <p>🐺 <strong>Repost</strong> — منصة ذئاب التسويق</p>
+  <p>🐺 <strong>ريبوست</strong> — منصة ذئاب التسويق</p>
   <p style="margin-top:6px;">جميع الحقوق محفوظة لـ <a href="#">سلمان @sa1man009</a></p>
 </footer>
 
