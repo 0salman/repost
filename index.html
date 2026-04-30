@@ -56,24 +56,54 @@
       border-bottom: 1px solid var(--border);
     }
     nav .logo {
-      display: flex; align-items: center; gap: 4px;
-      font-size: 26px; font-weight: 900; color: var(--text-primary);
+      display: flex; align-items: center;
       text-decoration: none; white-space: nowrap;
+      gap: 0;
       position: relative;
+      padding: 6px 16px 6px 0;
     }
-    nav .logo::after {
+    nav .logo .logo-icon {
+      width: 38px; height: 38px;
+      background: linear-gradient(145deg, #1e1e45, #16163a);
+      border: 1.5px solid rgba(233,69,96,0.25);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      margin-left: 10px;
+      position: relative;
+      box-shadow: 0 0 20px rgba(233,69,96,0.08);
+    }
+    nav .logo .logo-icon::before {
       content: '';
-      position: absolute; bottom: -3px; right: 0;
-      width: 55%; height: 3px;
-      background: linear-gradient(90deg, var(--accent), transparent);
-      border-radius: 2px;
+      position: absolute;
+      inset: -1.5px;
+      border-radius: 11px;
+      background: linear-gradient(145deg, rgba(233,69,96,0.3), transparent, rgba(233,69,96,0.1));
+      z-index: -1;
     }
-    nav .logo .logor { color: var(--text-primary); }
-    nav .logo .logost {
-      background: linear-gradient(135deg, var(--accent), #ff6b8a);
+    nav .logo .logo-icon svg {
+      width: 20px; height: 20px;
+    }
+    nav .logo .logo-text {
+      display: flex; flex-direction: column; align-items: flex-start;
+      line-height: 1;
+    }
+    nav .logo .logo-text .ltop {
+      font-size: 18px; font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: 0.5px;
+    }
+    nav .logo .logo-text .ltop span {
+      background: linear-gradient(135deg, var(--accent), #ff9a9e);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+    }
+    nav .logo .logo-text .lbot {
+      font-size: 10px; font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 2px;
     }
     nav .hamburger {
       display: none; flex-direction: column; gap: 5px;
@@ -331,9 +361,18 @@
 
 <nav>
   <a href="/" class="logo">
-    
-    
-    <span class="logor">ري</span><span class="logost">بوست</span>
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#e94560" stroke-width="2" stroke-linecap="round">
+        <path d="M4 4h16v16H4z"/>
+        <path d="M8 8h8v8H8z"/>
+        <path d="M12 2v4M12 18v4"/>
+        <path d="M2 12h4M18 12h4"/>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <div class="ltop">ري<span>بوست</span></div>
+      <div class="lbot">repost</div>
+    </div>
   </a>
   <button class="hamburger" onclick="this.classList.toggle('active');document.querySelector('.links').classList.toggle('open')">
     <span></span><span></span><span></span>
