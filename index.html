@@ -365,6 +365,7 @@
     <a href="#features">المميزات</a>
     <a href="#pricing">الأسعار</a>
     <a href="#services" class="nav-highlight">الخدمات</a>
+    <a href="#order">الطلب</a>
     <a href="#testimonials">التعليقات</a>
     <a href="#" class="btn-primary">جرب 3 أيام مجاناً</a>
   </div>
@@ -517,7 +518,57 @@
   </div>
 </section>
 
+
+<!-- Order Form -->
+<section class="section" id="order">
+  <div class="section-label">📝 طلب خدمة</div>
+  <h2 class="section-title">قدم طلبك الآن</h2>
+  <p class="section-desc">اختر الخدمة، اكتب تفاصيلك، واحنا نتواصل معك خلال 24 ساعة.</p>
+  <div style="max-width:600px;margin:0 auto;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:36px 28px;">
+    <form id="orderForm" onsubmit="submitOrder(event)" style="display:flex;flex-direction:column;gap:16px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div>
+          <label style="display:block;font-size:13px;color:var(--text-muted);margin-bottom:4px;">الاسم</label>
+          <input type="text" required placeholder="الاسم كامل" style="width:100%;padding:10px 14px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);font-size:14px;font-family:inherit;" />
+        </div>
+        <div>
+          <label style="display:block;font-size:13px;color:var(--text-muted);margin-bottom:4px;">الإيميل</label>
+          <input type="email" required placeholder="البريد الإلكتروني" style="width:100%;padding:10px 14px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);font-size:14px;font-family:inherit;" />
+        </div>
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;color:var(--text-muted);margin-bottom:4px;">الخدمة</label>
+        <select required style="width:100%;padding:10px 14px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);font-size:14px;font-family:inherit;">
+          <option value="">— اختر الخدمة —</option>
+          <option value="post">✍️ منشور واحد — 20 ريال</option>
+          <option value="weekly">📅 خطة أسبوعية — 99 ريال/أسبوع</option>
+          <option value="monthly">👥 اشتراك شهري — 299 ريال/شهر</option>
+        </select>
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;color:var(--text-muted);margin-bottom:4px;">تفاصيل إضافية (اختياري)</label>
+        <textarea rows="3" placeholder="اكتب أي تفاصيل إضافية..." style="width:100%;padding:10px 14px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);font-size:14px;font-family:inherit;resize:vertical;"></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="width:100%;justify-content:center;font-size:16px;padding:14px;">📨 إرسال الطلب</button>
+    </form>
+    <div id="orderSuccess" style="display:none;text-align:center;padding:30px;">
+      <div style="font-size:48px;margin-bottom:16px;">✅</div>
+      <h3 style="margin-bottom:8px;">تم استلام طلبك!</h3>
+      <p style="color:var(--text-secondary);">سنواصل معك خلال 24 ساعة على الإيميل المدخل.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+function submitOrder(e) {
+  e.preventDefault();
+  document.getElementById('orderForm').style.display = 'none';
+  document.getElementById('orderSuccess').style.display = 'block';
+}
+</script>
+
 <!-- Testimonials -->
+
 <section class="section" id="testimonials">
   <div class="section-label">⭐ ماذا يقول المستخدمون</div>
   <h2 class="section-title">الجميع يحب ريبوست</h2>
@@ -599,8 +650,18 @@
 </section>
 
 <footer>
+  <div style="display:flex;justify-content:center;gap:30px;margin-bottom:16px;">
+    <a href="#" style="color:var(--text-secondary);text-decoration:none;font-size:14px;transition:0.3s;">📱 تيك توك</a>
+    <a href="#" style="color:var(--text-secondary);text-decoration:none;font-size:14px;transition:0.3s;">🐦 تويتر</a>
+    <a href="#" style="color:var(--text-secondary);text-decoration:none;font-size:14px;transition:0.3s;">📷 انستقرام</a>
+    <a href="#" style="color:var(--text-secondary);text-decoration:none;font-size:14px;transition:0.3s;">📧 إيميل</a>
+  </div>
   <p>🐺 <strong>ريبوست</strong> — منصة ذئاب التسويق</p>
-  <p style="margin-top:6px;">جميع الحقوق محفوظة لـ <a href="#">سلمان @sa1man009</a></p>
+  <p style="margin-top:6px;font-size:12px;color:var(--text-muted);">جميع الحقوق محفوظة لـ <a href="#" style="color:var(--text-secondary);">سلمان @sa1man009</a></p>
+  <p style="margin-top:4px;font-size:12px;color:var(--text-muted);">
+    <a href="#" style="color:var(--text-muted);">سياسة الخصوصية</a> · 
+    <a href="#" style="color:var(--text-muted);">الشروط والأحكام</a>
+  </p>
 </footer>
 
 </body>
